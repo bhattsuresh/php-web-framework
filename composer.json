@@ -1,0 +1,34 @@
+{
+    "name": "codedev/sb",
+    "description": "PHP SIMPLE FRAMEWORK",
+    "license": "MIT",
+    "type":"project",
+    "authors": [
+        {
+            "name": "Suresh Bhatt",
+            "email": "bhattsuresh09@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": ["app/src/base/","controllers/","middleware/"],            
+            "SB\\": "app/src/sb"
+    
+          
+        },
+        "files":[
+            
+            "app/src/kernel/base.php",
+            "route/web.php",
+            "route/api.php",
+            "helper/helper.php",
+            "app/src/kernel/boot.php"
+            
+        ]
+    },
+    "require": {
+        "vlucas/phpdotenv": "^2.5",
+        "twig/twig": "^2.0",
+        "razorpay/razorpay": "^2.5"
+    }
+}
